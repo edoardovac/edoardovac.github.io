@@ -7,25 +7,39 @@
     'menu footer footer footer footer footer';
     text-align: center;
   }
-
+/*main header*/
 .item1 { 
     grid-area: header; 
+    text-decoration: underline;
+    border-color: black;
+    border-style: double;
+    border-radius: 25px;
+    text-shadow: 2px 2px green;
 } 
-
+/*navigation bar*/
 .item2 { 
     grid-area: menu;
-    background-color: aquamarine;
+	background-color: aquamarine;
 }
-
+/*article*/
 .item3 { 
     grid-area: main; 
+    font-family: sans-serif;
 }
-
+/*sidebar*/
 .item4 { 
     grid-area: right; 
-    background-color: rgb(234, 82, 82);
+	background-color: rgb(234, 82, 82);
+    font-size: small;
+}
+/*footer*/
+.item5 { 
+    grid-area: footer;
+    font-family: monospace; 
+    color: gray;
 }
 
-.item5 { 
-    grid-area: footer; 
+.fakeAd {
+    font-size: small;
+    font-style: italic;
 }
