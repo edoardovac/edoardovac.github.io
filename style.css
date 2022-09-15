@@ -37,7 +37,7 @@
 .item5 { 
     grid-area: footer;
     font-family: monospace; 
-    color: gray;
+    font-size: xx-small;
 }
 /*sidebar image*/
 .fakeAd {
