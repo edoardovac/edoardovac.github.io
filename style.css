@@ -25,6 +25,7 @@
 .item3 { 
     grid-area: main; 
     font-family: sans-serif;
+    text-align: justify;
 }
 /*sidebar*/
 .item4 { 
@@ -38,7 +39,7 @@
     font-family: monospace; 
     color: gray;
 }
-
+/*sidebar image*/
 .fakeAd {
     font-size: small;
     font-style: italic;
