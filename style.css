@@ -11,13 +11,15 @@
 .item1 { grid-area: header; 
 } 
 
-.item2 { grid-area: menu; 
+.item2 { grid-area: menu;
+		background-color: aquamarine;
 }
 
 .item3 { grid-area: main; 
 }
 
 .item4 { grid-area: right; 
+		background-color: rgb(234, 82, 82);
 }
 
 .item5 { grid-area: footer; 
