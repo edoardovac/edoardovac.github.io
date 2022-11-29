@@ -1,0 +1,58 @@
+@import url(https://fonts.googleapis.com/css?family=Abril+Fatface|Poppins);
+
+header {
+  display: flex;
+  flex-flow: column wrap;
+  border-style: solid;
+  border-color: black;
+  font-family: "Abril Fatface", serif;
+  background-color: rgba(255, 255, 255, 0.336);
+  margin-left: 20%;
+  margin-right: 22%;
+  margin-top: 2%;
+}
+
+/*all nav styles*/
+nav {
+  border-style: solid;
+  display: flex;
+  flex-flow: column wrap;
+  flex-basis: 30%;
+  margin-left: 15%;
+  margin-top: 2%;
+  height: 100%;
+}
+
+.nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #f1f1f1;
+  border: 1px solid #555;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+  text-align: center;
+  border-bottom: 1px solid #555;
+}
+
+li a :last-child {
+  border-bottom: none;
+}
+
+li a.active {
+  background-color: rgb(224, 193, 125);
+  color: black;
+  font-weight: bold;
+}
+
+li a:hover:not(.active) {
+  background-color: rgb(222, 209, 180);
+  color: rgb(40, 66, 66);
+}
+/*end of nav styles*/
