@@ -1,0 +1,187 @@
+@import url(https://fonts.googleapis.com/css?family=Abril+Fatface|Poppins);
+
+html {
+  scroll-behavior: smooth;
+  min-height: 100%;
+}
+
+body {
+  background-image: url(background_page_two.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+main {
+  display: grid;
+  font-family: Poppins, sans-serif;
+}
+
+header {
+  border-style: solid;
+  border-color: black;
+  font-family: "Abril Fatface", serif;
+  background-color: rgb(255, 255, 255, 0.5);
+  text-align: center;
+  margin: 7.5% 22% 2% 20%;
+  letter-spacing: 10px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+/*all nav styles*/
+nav {
+  display: flex;
+  flex-flow: column wrap;
+  flex-basis: 30%;
+  margin-left: 32%;
+  margin-top: 2%;
+  margin-right: 3%;
+  height: 100%;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #f1f1f1;
+  /*border: 1px solid #555;*/
+  border-style: solid;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+  text-align: center;
+  border-bottom: 1px solid #555;
+}
+
+li a :last-child {
+  border-bottom: none;
+}
+
+li a.active {
+  background-color: rgb(224, 193, 125);
+  color: black;
+  font-weight: bold;
+}
+
+li a:hover:not(.active) {
+  background-color: rgb(222, 209, 180);
+  color: rgb(40, 66, 66);
+}
+/*end of nav styles*/
+
+article {
+  background-color: rgb(255, 255, 255, 0.5);
+  grid-column-start: 2;
+  grid-column-end: 3;
+  margin: 1% 31% 0% 5%;
+}
+
+h2 {
+  text-align: center;
+  font-family: "Abril Fatface", serif;
+}
+
+/*Maybe 3 or four list one next
+  to each other for desktop, but normal list for mobile*/
+table {
+  width: 100%;
+  margin: 0 3%;
+}
+
+th,
+td {
+  padding: 0%;
+}
+
+th {
+  text-align: left;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+td {
+  border-left: 1px solid black;
+  cursor: pointer;
+  padding-bottom: 1%;
+}
+
+footer {
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: center;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  margin-top: 5%;
+}
+
+.pFooter {
+  font-style: italic;
+  margin-top: 0;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.img-container {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  text-align: center;
+}
+
+img {
+  border: solid black;
+}
+
+/*TABLETS NEED SMALLER FONT*/
+/*piccoli tablet da 600px a 768px*/
+@media only screen and (max-width: 900px) {
+  main {
+    font-size: 12px;
+  }
+  table {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  img {
+    width: 90vw;
+  }
+
+  header {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin: 5% 5% 0% 5%;
+    padding: 0 3%;
+    font-size: 3vw;
+    grid-row: 1;
+  }
+
+  nav {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 3;
+    margin: 2% 8% 2% 7%;
+    font-size: 3vw;
+  }
+
+  article {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 2;
+    margin: 1% 7% 0% 7%;
+    font-size: 3.5vw;
+  }
+
+  footer {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+}
