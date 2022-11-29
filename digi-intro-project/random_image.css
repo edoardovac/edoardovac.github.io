@@ -1,0 +1,189 @@
+@import url(https://fonts.googleapis.com/css?family=Abril+Fatface|Poppins);
+
+html {
+  scroll-behavior: smooth;
+  min-height: 100%;
+}
+
+body {
+  background-image: url(background_page_two.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  border-style: solid;
+  border-color: black;
+  font-family: "Abril Fatface", serif;
+  background-color: rgb(255, 255, 255, 0.5);
+  text-align: center;
+  margin: 8% 22% 0% 20%;
+  letter-spacing: 10px;
+}
+
+.row-flex {
+  display: flex;
+  flex-flow: row nowrap;
+  font-family: Poppins, sans-serif;
+}
+
+/*all nav styles*/
+nav {
+  border-style: solid;
+  display: flex;
+  flex-flow: column wrap;
+  flex-basis: 30%;
+  margin-left: 15%;
+  margin-top: 2%;
+  height: 100%;
+}
+
+.nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #f1f1f1;
+  border: 1px solid #555;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+  text-align: center;
+  border-bottom: 1px solid #555;
+}
+
+li a :last-child {
+  border-bottom: none;
+}
+
+li a.active {
+  background-color: rgb(224, 193, 125);
+  color: black;
+  font-weight: bold;
+}
+
+li a:hover:not(.active) {
+  background-color: rgb(222, 209, 180);
+  color: rgb(40, 66, 66);
+}
+/*end of nav style*/
+
+/*start of article style*/
+article {
+  background-color: rgb(255, 255, 255, 0.5);
+  flex-basis: 33%;
+  margin: 1% 10% 0% 5%;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  font-family: "Abril Fatface", serif;
+}
+
+.articleParagraph {
+  text-align: justify;
+  margin: 0 3%;
+}
+
+.divButtonNxtImg {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  margin: 0 3%;
+}
+
+/*button style*/
+.buttonNxtImg {
+  cursor: pointer;
+  margin: 0 3%;
+  font-size: 24px;
+  text-decoration: none;
+  color: #333;
+  border-top: 2px solid #333;
+  border-bottom: 2px solid #333;
+  padding: 10px;
+  letter-spacing: 2px;
+  transition: all 0.25s;
+  font-family: Poppins, sans-serif;
+  background-color: white;
+}
+
+.buttonNxtImg:hover {
+  letter-spacing: 15px;
+  font-weight: bold;
+  font-family: Poppins, sans-serif;
+}
+
+.divDescription {
+  text-align: center;
+  margin: 0 3%;
+}
+
+.img-container {
+  text-align: center;
+}
+
+img {
+  border: solid black;
+  flex-grow: 0%;
+}
+
+/*end of article styles*/
+
+/*footer style*/
+footer {
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: center;
+}
+
+.pFooter {
+  font-family: Poppins, sans-serif;
+  font-style: italic;
+  margin-top: 0;
+}
+
+/*for cellphones*/
+@media only screen and (max-width: 600px) {
+  main {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  .row-flex {
+    display: block;
+  }
+
+  header {
+    margin: 5% 5% 0% 5%;
+    padding: 0 3%;
+    font-size: 3vw;
+  }
+
+  article {
+    margin: -3% 7% 0% 7%;
+    order: -1;
+  }
+
+  nav {
+    margin: 2% 7% 2% 7%;
+    order: 2;
+  }
+
+  .buttonNxtImg:hover {
+    letter-spacing: 5px;
+  }
+
+  img {
+    width: 90vw;
+    order: 1;
+  }
+  .pFooter {
+    font-size: 2.5vw;
+  }
+}
