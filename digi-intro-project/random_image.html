@@ -11,72 +11,8 @@
       <h1>Let's Learn How to Draw!</h1>
     </header>
     <br />
-    <main>
-      <div class="row-flex">
-        <nav class="big-screen">
-          <ul class="nav-list">
-            <li>
-              <a
-                href="https://edoardovac.github.io/digi-intro-project/index.html"
-                >Home</a
-              >
-            </li>
-            <li>
-              <a
-                class="active"
-                href="https://edoardovac.github.io/digi-intro-project/random_image.html"
-                >Start drawing!</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://edoardovac.github.io/digi-intro-project/art_quotes.html"
-                >Art quotes</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://edoardovac.github.io/digi-intro-project/image_list.html"
-                >Categories</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://edoardovac.github.io/digi-intro-project/sources.html"
-                >Image sources</a
-              >
-            </li>
-          </ul>
-        </nav>
-
-        <article>
-          <h2>Drawing exercises</h2>
-
-          <p class="articleParagraph">
-            Here you can practise your drawing, you need something to draw on
-            and a stopwatch, you can even use the one you have on your phone.
-            <br />
-            Once you are ready, set your stopwatch to 10 minutes and press the
-            button below!
-          </p>
-          <br />
-          <div class="divButtonNxtImg">
-            <input
-              type="button"
-              class="buttonNxtImg"
-              value="NEXT IMAGE"
-              onclick="nextImg()"
-            />
-          </div>
-          <div class="divDescription">
-            <p id="description"></p>
-          </div>
-        </article>
-      </div>
-      <div id="img-container" class="img-container"></div>
-
-      <!-- nav bar for mobile -->
-      <nav class="small-screen">
+    <main class="row-flex">
+      <nav class="big-screen">
         <ul class="nav-list">
           <li>
             <a href="https://edoardovac.github.io/digi-intro-project/index.html"
@@ -111,19 +47,78 @@
         </ul>
       </nav>
 
-      <footer>
-        <p>
-          <a href="http://jigsaw.w3.org/css-validator/check/referer">
-            <img
-              style="border: 0; width: 88px; height: 31px"
-              src="http://jigsaw.w3.org/css-validator/images/vcss"
-              alt="CSS Valido!"
-            />
-          </a>
+      <article>
+        <h2>Drawing exercises</h2>
+
+        <p class="articleParagraph">
+          Here you can practise your drawing, you need something to draw on and
+          a stopwatch, you can even use the one you have on your phone.
+          <br />
+          Once you are ready, set your stopwatch to 10 minutes and press the
+          button below!
         </p>
-        <p class="pFooter">Image sources found in the sources page</p>
-      </footer>
+        <br />
+        <div class="divButtonNxtImg">
+          <input
+            type="button"
+            class="buttonNxtImg"
+            value="NEXT IMAGE"
+            onclick="nextImg()"
+          />
+        </div>
+        <div class="divDescription">
+          <p id="description"></p>
+        </div>
+      </article>
     </main>
+    <div id="img-container" class="img-container"></div>
+
+    <!-- nav bar for mobile -->
+    <nav class="small-screen">
+      <ul class="nav-list">
+        <li>
+          <a href="https://edoardovac.github.io/digi-intro-project/index.html"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            class="active"
+            href="https://edoardovac.github.io/digi-intro-project/random_image.html"
+            >Start drawing!</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://edoardovac.github.io/digi-intro-project/art_quotes.html"
+            >Art quotes</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://edoardovac.github.io/digi-intro-project/image_list.html"
+            >Categories</a
+          >
+        </li>
+        <li>
+          <a href="https://edoardovac.github.io/digi-intro-project/sources.html"
+            >Image sources</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <footer>
+      <p>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+          <img
+            style="border: 0; width: 88px; height: 31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="CSS Valido!"
+          />
+        </a>
+      </p>
+      <p class="pFooter">Image sources found in the sources page</p>
+    </footer>
     <script src="random_image.js"></script>
   </body>
 </html>
