@@ -104,7 +104,6 @@ th {
 }
 
 td {
-  border-left: 1px solid black;
   cursor: pointer;
   padding-bottom: 1%;
   text-decoration: underline;
